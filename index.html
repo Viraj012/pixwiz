@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Wizard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="pixel-scene">
+                <div class="stars"></div>
+                <div class="mountains"></div>
+                <div class="city"></div>
+            </div>
+            <h1 class="title">Pixel Art Wizard</h1>
+        </header>
+        
+        <div class="container">
+            <div class="controls">
+                <div class="section-title">Magic Colors</div>
+                <div class="color-picker">
+                    <div id="pen-color" class="color-box" style="background-color: #ffde59;"></div>
+                    <span class="color-label">Drawing Color</span>
+                </div>
+                
+                <div class="color-picker">
+                    <div id="bg-color" class="color-box" style="background-color: #ffffff;"></div>
+                    <span class="color-label">Background</span>
+                </div>
+                
+                <div class="section-title">Pixel Tools</div>
+                <div class="tool-grid">
+                    <button id="fill-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-fill"></span>Fill
+                    </button>
+                    <button id="eyedropper-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-eyedropper"></span>Pick
+                    </button>
+                    <button id="eraser-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-eraser"></span>Erase
+                    </button>
+                    <button id="rainbow-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-rainbow"></span>Rainbow
+                    </button>
+                    <button id="shade-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-shade"></span>Shade
+                    </button>
+                    <button id="lighten-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-lighten"></span>Lighten
+                    </button>
+                </div>
+                
+                <div class="section-title">Canvas Options</div>
+                <div class="grid-size-display">GRID SIZE: <span id="size-value">16×16</span></div>
+                <input type="range" id="grid-size-slider" min="8" max="64" value="16" step="4">
+                
+                <div class="tool-grid">
+                    <button id="grid-lines-btn" class="pixel-btn active">
+                        <span class="pixel-icon icon-grid"></span>Grid
+                    </button>
+                    <button id="clear-btn" class="pixel-btn">
+                        <span class="pixel-icon icon-clear"></span>Clear
+                    </button>
+                    <button id="save-btn" class="pixel-btn full-width">
+                        <span class="pixel-icon icon-save"></span>Save Artwork
+                    </button>
+                </div>
+            </div>
+            
+            <div class="canvas-container">
+                <div class="wizard">
+                    <div class="wizard-hat"></div>
+                    <div class="wizard-star"></div>
+                </div>
+                <div class="pixel-character left">
+                    <div class="character-body"></div>
+                    <div class="character-head"></div>
+                    <div class="character-eye left-eye"></div>
+                    <div class="character-eye right-eye"></div>
+                </div>
+                <div class="pixel-character right">
+                    <div class="character-body"></div>
+                    <div class="character-head"></div>
+                    <div class="character-eye left-eye"></div>
+                    <div class="character-eye right-eye"></div>
+                </div>
+                
+                <div id="pixel-canvas"></div>
+            </div>
+        </div>
+        
+        <button id="adventure-btn" class="pixel-btn-animated">Start Your Pixel Adventure!</button>
+        
+        <div class="footer">
+            Created by the Pixels ✨ Create, Share, and Explore the Pixel Universe!<br>
+            The Magic is in the Pixels
+        </div>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
