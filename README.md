@@ -2,7 +2,7 @@
 
 A fun, interactive pixel art creation tool that lets you unleash your creativity one pixel at a time. Create, save, and share your pixel masterpieces!
 
-![Pixel Art Wizard Screenshot](https://github.com/Viraj012/pixel-art-wizard/raw/main/screenshot.png)
+![Pixel Art Wizard Screenshot](https://github.com/Viraj012/pixwiz/blob/main/screenshot.png)
 
 ## 🌟 Features
 
